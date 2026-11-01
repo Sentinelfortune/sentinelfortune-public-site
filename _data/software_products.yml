@@ -1,0 +1,16 @@
+# Public software catalogue. Add future products only after an approved public URL and launch status are verified.
+# This registry is separate from the five downloadable product categories and the seven public worlds.
+- slug: orsflow
+  name: ORsFlow
+  logo: /assets/img/orsflow-logo.png
+  category: Business Execution SaaS
+  status: Live
+  tagline: Stop guessing what to do next.
+  description: Turn a business outcome into a prioritized mission, the work to execute, and measurable learning from real results.
+  audience: Founders, consultants, agencies and business operators
+  website: https://app.orsflow.sentinelfortune.com/
+  highlights:
+    - Identify the primary constraint
+    - Compare and choose the next best move
+    - Produce practical work with owner approval
+    - Measure results and learn from evidence

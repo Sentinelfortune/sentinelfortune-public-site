@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>S.5 ASCENT — free browser platformer by Sentinel Fortune</title>
+  <meta name="description" content="S.5 ASCENT is a free browser platformer from Sentinel Fortune LLC. Six stages, no download, no account, nothing to buy. Plays on desktop and mobile.">
+  <link rel="canonical" href="https://sentinelfortune.github.io/sentinelfortune/frontend/games/s5-ascent-lite/">
+  <meta name="theme-color" content="#1b3a6b">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sentinel Fortune LLC">
+  <meta property="og:title" content="S.5 ASCENT — free browser platformer">
+  <meta property="og:description" content="Six stages, no download, no account, nothing to buy. A free platformer from Sentinel Fortune LLC.">
+  <meta property="og:url" content="https://sentinelfortune.github.io/sentinelfortune/frontend/games/s5-ascent-lite/">
+  <meta property="og:image" content="https://sentinelfortune.github.io/sentinelfortune/assets/img/sf-og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://sentinelfortune.github.io/sentinelfortune/assets/img/sf-og.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/sentinelfortune/assets/img/favicon-32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="sr-only">S.5 ASCENT — a free browser platformer by Sentinel Fortune LLC</h1>
+
+<div id="stage">
+  <canvas id="gameCanvas" aria-label="S.5 ASCENT game area" role="img"></canvas>
+
+  <!-- ── HUD ──────────────────────────────────────────────────────────── -->
+  <div id="hud" hidden>
+    <div class="hud-l">
+      <span class="hud-k" id="hud-level">Stage 1/6</span>
+      <span class="hud-v" id="hud-name">First Light</span>
+    </div>
+    <div class="hud-c">
+      <span class="hud-chip" title="Collectibles"><i class="dot-gold"></i><span id="hud-orbs">0/0</span></span>
+      <span class="hud-chip" title="Score">◈ <span id="hud-score">0</span></span>
+      <span class="hud-chip lives" id="hud-lives" aria-label="3 lives remaining">◆◆◆</span>
+    </div>
+    <div class="hud-r">
+      <button id="btn-mute" class="icon-btn" type="button" aria-label="Mute sound" aria-pressed="false">🔊</button>
+    </div>
+  </div>
+
+  <!-- ── TOUCH CONTROLS ───────────────────────────────────────────────── -->
+  <div id="touch-controls" hidden>
+    <div class="pad-l">
+      <button id="btn-left"  class="pad" type="button" aria-label="Move left">◀</button>
+      <button id="btn-right" class="pad" type="button" aria-label="Move right">▶</button>
+    </div>
+    <div class="pad-r">
+      <button id="btn-jump" class="pad jump" type="button" aria-label="Jump">▲</button>
+    </div>
+  </div>
+
+  <!-- ── MENU ─────────────────────────────────────────────────────────── -->
+  <section id="screen-menu" class="screen" aria-labelledby="menu-h">
+    <div class="panel">
+      <p class="eyebrow">Sentinel Fortune · Free to play</p>
+      <p class="logo">S.5</p>
+      <h2 id="menu-h" class="title">ASCENT</h2>
+      <div class="rule"></div>
+      <p class="lede">
+        Six stages. No download, no account, nothing to buy.
+        Run, jump, gather light, reach the gate.
+      </p>
+
+      <p id="load-error" class="err" hidden>
+        The stages could not be loaded. Please refresh the page.
+      </p>
+
+      <button id="btn-play" class="btn primary" type="button">Play</button>
+
+      <p class="select-h">Stages</p>
+      <div id="level-select" class="levels"></div>
+
+      <div class="controls-note">
+        <p><b>Keyboard</b> — ◀ ▶ or A / D to move · Space, W or ▲ to jump · M mutes · Esc pauses</p>
+        <p><b>Touch</b> — on-screen pad, bottom of the screen</p>
+      </div>
+
+      <p class="foot">
+        Best run <b id="menu-best">0</b>
+        · <button id="btn-reset" class="linkish" type="button">Reset progress</button>
+        · <a href="/sentinelfortune/">Sentinel Fortune</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── STAGE COMPLETE ───────────────────────────────────────────────── -->
+  <section id="screen-level-complete" class="screen" hidden aria-labelledby="lc-h">
+    <div class="panel">
+      <p class="eyebrow">Stage clear</p>
+      <h2 id="lc-h" class="title sm"><span id="lc-name">First Light</span></h2>
+      <p class="lede sm" id="lc-idea">Move, jump, collect.</p>
+      <div class="rule"></div>
+      <dl class="stats">
+        <div><dt>Collected</dt><dd id="lc-orbs">0 / 0</dd></div>
+        <div><dt>Time</dt><dd id="lc-time">0.0s</dd></div>
+        <div><dt>Bonus</dt><dd id="lc-bonus">0</dd></div>
+        <div class="big"><dt>Stage score</dt><dd id="lc-total">0</dd></div>
+      </dl>
+      <button id="btn-next" class="btn primary" type="button">Next stage →</button>
+      <button id="btn-menu" class="btn ghost" type="button">Stage list</button>
+    </div>
+  </section>
+
+  <!-- ── GAME OVER ────────────────────────────────────────────────────── -->
+  <section id="screen-gameover" class="screen" hidden aria-labelledby="go-h">
+    <div class="panel">
+      <p class="eyebrow">Out of lives</p>
+      <h2 id="go-h" class="title sm">Try that again</h2>
+      <div class="rule"></div>
+      <p class="lede sm">You restart at the beginning of the stage. Checkpoints carry you the rest of the way.</p>
+      <button id="btn-retry" class="btn primary" type="button">Retry stage</button>
+      <button id="btn-menu-2" class="btn ghost" type="button">Stage list</button>
+    </div>
+  </section>
+
+  <!-- ── PAUSE ────────────────────────────────────────────────────────── -->
+  <section id="screen-pause" class="screen" hidden aria-labelledby="pa-h">
+    <div class="panel">
+      <p class="eyebrow">Paused</p>
+      <h2 id="pa-h" class="title sm">Take your time</h2>
+      <div class="rule"></div>
+      <button id="btn-resume" class="btn primary" type="button">Resume</button>
+      <button id="btn-menu-3" class="btn ghost" type="button">Stage list</button>
+    </div>
+  </section>
+
+  <!-- ── RUN COMPLETE ─────────────────────────────────────────────────────
+       This is where the old build put a paywall: "The Threshold — unlock Full
+       ASCENT to continue. Levels 6-20 await beyond the gate", behind a Stripe
+       link whose path was never filled in. There is no gate now. Finishing the
+       game finishes the game.
+  ─────────────────────────────────────────────────────────────────────── -->
+  <section id="screen-complete" class="screen" hidden aria-labelledby="gc-h">
+    <div class="panel">
+      <p class="eyebrow">All stages clear</p>
+      <h2 id="gc-h" class="title">You made it</h2>
+      <div class="rule"></div>
+      <p class="lede">
+        <b id="gc-levels">6</b> stages, total score <b id="gc-score">0</b>.
+        Go back for the prisms — there is one hidden in every stage.
+      </p>
+      <button id="btn-menu-4" class="btn primary" type="button">Stage list</button>
+      <p class="foot"><a href="/sentinelfortune/">Back to Sentinel Fortune</a></p>
+    </div>
+  </section>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
