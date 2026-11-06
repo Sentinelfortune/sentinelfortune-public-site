@@ -133,6 +133,8 @@ function render(p) {
     '<p class="pd-short">' + esc(p.shortDescription) + "</p>" +
     priceBlock +
     '<div class="pd-meta">' +
+    metaItem("Publisher", "House of Assets (Sentinel Fortune LLC)") +
+    metaItem("Seller and licensor", "Sentinel Fortune LLC") +
     metaItem("Audience", p.audience) +
     metaItem("Edition", p.edition) +
     metaItem("Version", p.version) +
