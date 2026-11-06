@@ -139,6 +139,7 @@ function render(p) {
     metaItem("Edition", p.edition) +
     metaItem("Version", p.version) +
     metaItem("License", licenseLabel(p.licenseType)) +
+    '<div class="pd-meta-item"><div class="pd-meta-label">Licence terms</div><div class="pd-meta-value"><a href="licenses.html">See licences and edition-specific rights</a></div></div>' +
     metaItem("Formats", p.supportedFormats) +
     metaItem("Category", p.category) +
     "</div>" +
@@ -337,6 +338,8 @@ function licenseLabel(type) {
     MULTI_LOCATION: "Multi-Location",
     CONSULTANT: "Consultant",
     WHITE_LABEL: "White Label",
+    PERSONAL_HOUSEHOLD: "Personal & Household — one household, personal use",
+    PLR: "Private Label Rights (PLR) — subject to edition-specific resale terms",
   };
   return labels[type] || type;
 }
