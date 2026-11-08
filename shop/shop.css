@@ -316,3 +316,18 @@ main{flex:1}
 @media (prefers-reduced-motion:reduce){
   .cat-chip{transition:none}
 }
+
+/* Shop experience 2026-11-07: show complete product art, never crop books or cover titles. */
+.product-card-cover {background:linear-gradient(145deg,#0c1530,#070c1b); }
+.product-card-img {box-sizing:border-box;width:100%;height:100%;object-fit:contain;object-position:center;padding:12px;}
+.gallery-cover-img {box-sizing:border-box;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;object-position:center;background:linear-gradient(145deg,#0c1530,#070c1b);padding:14px;border:1px solid var(--gold-line);}
+.catalog-category-nav {margin:22px auto 22px;border-top:0;padding-top:0;}
+.catalog-category-nav h2 {font-size:1.48rem;}
+.catalog-featured-preview {max-width:1080px;margin:12px auto 30px;padding:20px 24px;display:flex;align-items:center;gap:28px;background:linear-gradient(120deg,rgba(20,27,56,.9),rgba(9,14,30,.75));border:1px solid var(--gold-line);border-radius:12px;}
+.catalog-featured-image {flex:0 0 175px;display:block;line-height:0;}
+.catalog-featured-image img {width:100%;height:auto;border-radius:7px;}
+.catalog-featured-preview h2 {font:400 1.8rem/1.15 'Cormorant Garamond',Georgia,serif;color:var(--white);margin:5px 0 10px;}
+.catalog-featured-preview p {font-size:.86rem;line-height:1.7;color:var(--muted);margin:0 0 12px;}
+.catalog-featured-actions {display:flex;align-items:center;flex-wrap:wrap;gap:18px;}
+.catalog-featured-actions strong {font-family:'Cinzel',Georgia,serif;color:var(--gold3);}
+@media(max-width:600px){.catalog-featured-preview{margin:10px 15px 24px;gap:16px;padding:16px;align-items:flex-start}.catalog-featured-image{flex-basis:95px}.catalog-featured-preview h2{font-size:1.25rem}.catalog-featured-actions .btn{width:100%;text-align:center}}
