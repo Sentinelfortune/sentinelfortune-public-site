@@ -29,65 +29,80 @@
 <header class="shop-hdr">
   <div class="shop-hdr-inner">
     <a class="shop-logo" href="../index.html">SENTINEL FORTUNE LLC<small>Digital Shop</small></a>
-    <nav class="shop-hdr-nav">
-      <a href="index.html" aria-current="page">Products</a>
-      <a href="../products/">Universes</a>
-      <a href="licenses.html">Licenses</a>
-      <a href="refund-policy.html">Refund Policy</a>
-      <a href="terms-of-sale.html">Terms</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="contact.html">Contact</a>
+    <nav class="shop-hdr-nav" aria-label="Main shop navigation">
+      <a href="index.html" aria-current="page">Shop</a>
+      <a href="https://onecompany.sentinelfortune.com/">Seven worlds</a>
+      <a href="#browse-products">Browse products</a>
+      <a href="contact.html">Support</a>
     </nav>
-    <a class="shop-hdr-back" href="../index.html">← Main Site</a>
+    <a class="shop-hdr-back" href="https://public.sentinelfortune.com/">Public home</a>
   </div>
 </header>
 
-<main>
-  <div class="page-head">
-    <div class="page-tag">Digital Shop</div>
-    <h1 class="page-title">Digital Products &amp; Toolkits</h1>
-    <p class="page-sub">Every product is delivered as a secure, licensed download after Stripe checkout. No subscriptions, no bundled upsells — one purchase, one license, one download link.</p>
-  </div>
-
-  <p class="page-sub">Published by House of Assets, the publishing imprint of Sentinel Fortune LLC. Sentinel Fortune LLC is the seller and licensor. Only approved and deliverable editions are made available for checkout.</p>
-
-  <section class="catalog-featured-preview" aria-labelledby="cashflow-preview-heading">
-    <a class="catalog-featured-image" href="product.html?slug=small-business-cash-flow-control-toolkit" aria-label="View Small Business Cash Flow Control Toolkit and purchase">
-      <img src="../products/small-business-cash-flow-control-toolkit/cover-preview.png" alt="Small Business Cash Flow Control Toolkit edition 4.2.1 front cover" width="210" height="260" loading="lazy" decoding="async">
-    </a>
-    <div>
-      <div class="product-card-cat">Featured · Business &amp; Professional</div>
-      <h2 id="cashflow-preview-heading">Small Business Cash Flow Control Toolkit</h2>
-      <p>Plan and review the next 13 weeks of cash flow with the Excel workbooks, illustrated guide and a practice copy. See the deliverables before purchasing; the full licensed files are delivered privately after checkout.</p>
-      <p class="catalog-featured-actions"><strong>$29.00 · one-time</strong> <a class="btn btn-gold" href="product.html?slug=small-business-cash-flow-control-toolkit">View Product &amp; Buy</a></p>
+<main class="shop-landing">
+  <section class="shop-welcome" aria-labelledby="shop-welcome-heading">
+    <div class="shop-welcome-inner">
+      <div class="page-tag">Sentinel Fortune LLC &middot; Digital Shop</div>
+      <h1 id="shop-welcome-heading">Digital assets made for meaningful progress.</h1>
+      <p>Browse professional toolkits, workbooks, planners and original publications. Clear product details, transparent licensing and secure checkout.</p>
+      <div class="shop-welcome-actions">
+        <a class="btn btn-gold" href="#browse-products">Browse products</a>
+        <a class="btn btn-line" href="https://onecompany.sentinelfortune.com/">Discover our worlds</a>
+      </div>
+      <div class="shop-trust-strip" aria-label="Shopping information">
+        <span>Clear one-time prices</span>
+        <span>Secure Stripe checkout</span>
+        <span>Licensed downloadable files</span>
+      </div>
     </div>
   </section>
 
-  <section class="catalog-universes catalog-category-nav" aria-labelledby="cu-h">
-    <h2 id="cu-h">Explore products by universe</h2>
-    <p>Select a category to see the products currently available in it. All purchases are handled through the same secure Shop.</p>
-    <ul class="catalog-universe-list">
-      <li><a href="?category=business">Business &amp; Professional</a></li>
-      <li><a href="?category=education">Education &amp; Learning</a></li>
-      <li><a href="?category=books">Books &amp; Publishing</a></li>
-      <li><a href="?category=spirituality">Spirituality &amp; Reflection</a></li>
-      <li><a href="?category=software">Software &amp; Digital Tools</a></li>
-    </ul>
+  <section class="company-bridge" aria-labelledby="company-bridge-title">
+    <div class="company-bridge-copy">
+      <p class="bridge-eyebrow">Explore the Sentinel Fortune ecosystem</p>
+      <h2 id="company-bridge-title">One company. Seven distinct worlds.</h2>
+      <p>Discover our creative, educational, technology and publishing worlds through the dedicated OneCompany experience. Our Digital Shop remains the place to browse and purchase licensed products.</p>
+      <div class="company-bridge-links">
+        <a class="btn btn-gold" href="https://onecompany.sentinelfortune.com/">Explore seven worlds <span aria-hidden="true">↗</span></a>
+        <a class="bridge-secondary-link" href="#browse-products">Or shop digital products <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+    <div class="company-bridge-mark" aria-hidden="true"><span>S</span><small>F</small><b>07</b></div>
   </section>
 
-  <!-- Hidden until the catalogue actually loads. Filter controls above an
-       error state or an empty shelf are worse than no controls. -->
-  <div class="catalog-tools" id="catalogTools" hidden>
-    <div class="catalog-filters" id="catalogFilters" role="group" aria-label="Filter by universe"></div>
-    <div class="catalog-search">
-      <label class="sr-only" for="catalogSearch">Search products</label>
-      <input type="search" id="catalogSearch" placeholder="Search products…"
-             autocomplete="off" spellcheck="false">
-      <p class="catalog-count" id="catalogCount" role="status" aria-live="polite"></p>
+  <section class="shop-browse-section" id="browse-products" aria-labelledby="browse-title">
+    <div class="shop-browse-heading">
+      <div>
+        <div class="page-tag">Explore the collection</div>
+        <h2 id="browse-title">Find your next resource</h2>
+        <p>Search by topic, or choose one category. Each product page explains the files, license and purchase price.</p>
+      </div>
     </div>
-  </div>
+    <!-- One category navigation only. Rendered from the LIVE catalogue by shop.js. -->
+    <div class="catalog-tools" id="catalogTools" hidden>
+      <div class="catalog-search">
+        <label for="catalogSearch">Search products</label>
+        <input type="search" id="catalogSearch" placeholder="Try: budgeting, freelancer, planning..."
+               autocomplete="off" spellcheck="false">
+      </div>
+      <div class="catalog-filter-wrap">
+        <div class="catalog-filter-title">Browse by category</div>
+        <div class="catalog-filters" id="catalogFilters" role="group" aria-label="Filter by category"></div>
+      </div>
+      <div class="catalog-result-row">
+        <p class="catalog-count" id="catalogCount" role="status" aria-live="polite"></p>
+        <label class="catalog-sort-label" for="catalogSort">Sort by
+          <select id="catalogSort" aria-label="Sort products">
+            <option value="az">Name A-Z</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </section>
 
-  <div class="catalog-grid" id="catalogGrid">
+  <div class="catalog-grid" id="catalogGrid" aria-label="Available digital products">
     <div class="spinner" role="status" aria-label="Loading products"></div>
   </div>
 
@@ -105,7 +120,7 @@
     <a href="contact.html">Contact</a>
     <a href="../index.html">Sentinel Fortune LLC — Main Site</a>
   </nav>
-  <div class="shop-ftr-copy">© Sentinel Fortune LLC. All rights reserved. House of Assets is a publishing imprint of Sentinel Fortune LLC.</div>
+  <div class="shop-ftr-copy">&copy; Sentinel Fortune LLC. All rights reserved. House of Assets is a publishing imprint of Sentinel Fortune LLC.</div>
 </footer>
 
 <script src="shop-config.js"></script>

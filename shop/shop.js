@@ -24,6 +24,7 @@ var UNIVERSES = [
 var ALL = [];        // every product the Worker returned
 var activeCat = "";  // "" = all universes
 var activeQ = "";
+var activeSort = "az";
 
 function esc(s) {
   var d = document.createElement("div");
@@ -123,6 +124,12 @@ function render() {
   if (!grid) return;
 
   var shown = ALL.filter(matches);
+  shown.sort(function (a,b) {
+    var x = Number(a.priceCents || 0), y = Number(b.priceCents || 0);
+    if (activeSort === "price-asc" && x !== y) return x - y;
+    if (activeSort === "price-desc" && x !== y) return y - x;
+    return String(a.title || "").localeCompare(String(b.title || ""));
+  });
 
   if (count) {
     count.textContent = shown.length === ALL.length
@@ -133,7 +140,7 @@ function render() {
   if (shown.length === 0) {
     grid.innerHTML =
       '<div class="state-msg"><strong>Nothing matches that yet.</strong>' +
-      "<span>No published product fits this filter right now. Try another universe, or " +
+      "<span>No product matches this selection. Try another category or search term, or " +
       '<a href="index.html">see everything</a>.</span></div>';
     return;
   }
@@ -222,6 +229,13 @@ async function loadProducts() {
     var data = await res.json();
     ALL = (data && data.products) || [];
 
+    // Dedupe display records defensively by canonical slug; never alter Shop DB.
+    var unique = Object.create(null);
+    ALL = ALL.filter(function (p) {
+      if (!p || !p.slug || unique[p.slug]) return false;
+      unique[p.slug] = true;
+      return true;
+    });
     if (ALL.length === 0) {
       if (tools) tools.hidden = true;
       grid.innerHTML =
@@ -240,6 +254,13 @@ async function loadProducts() {
     if (cat) activeCat = catForSlug(cat);
     syncChips();
 
+    var sort = document.getElementById("catalogSort");
+    if (sort) {
+      sort.addEventListener("change", function () {
+        activeSort = sort.value;
+        render();
+      });
+    }
     var box = document.getElementById("catalogSearch");
     if (box) {
       box.addEventListener("input", function () {

@@ -331,3 +331,105 @@ main{flex:1}
 .catalog-featured-actions {display:flex;align-items:center;flex-wrap:wrap;gap:18px;}
 .catalog-featured-actions strong {font-family:'Cinzel',Georgia,serif;color:var(--gold3);}
 @media(max-width:600px){.catalog-featured-preview{margin:10px 15px 24px;gap:16px;padding:16px;align-items:flex-start}.catalog-featured-image{flex-basis:95px}.catalog-featured-preview h2{font-size:1.25rem}.catalog-featured-actions .btn{width:100%;text-align:center}}
+
+
+/* Premium corporate Shop UX · 2026-11-08 · applied to all Shop surfaces */
+:root{
+ --ink:#060913;--deep:#080f20;--layer:#10192d;--card:#132039;
+ --gold:#d9b962;--gold2:#f0d78c;--gold3:#ffe2a0;
+ --gold-line:rgba(221,189,105,.38);
+ --white:#f6f4ee;--muted:#c4cbd5;--muted2:#b3bcc9;
+}
+body{background:radial-gradient(circle at 72% 0%,rgba(31,49,76,.42),transparent 40%),var(--ink);color:var(--white);font-weight:400}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #f4d989;outline-offset:3px}
+.shop-hdr{background:rgba(6,9,19,.96);border-bottom:1px solid rgba(221,189,105,.26)}
+.shop-hdr-inner{max-width:1200px;min-height:78px;height:auto;padding:13px 28px;gap:22px}
+.shop-logo{font-size:clamp(12px,1.2vw,16px);letter-spacing:.09em;line-height:1.35}
+.shop-logo small{font-size:10px;color:#d0c8ae;letter-spacing:.20em}
+.shop-hdr-nav{gap:8px;flex-wrap:nowrap}
+.shop-hdr-nav a,.shop-hdr-back{font-family:var(--ff3);font-size:12px;font-weight:500;letter-spacing:.045em;text-transform:none;color:#e1e4ec;padding:10px 13px;line-height:1.35}
+.shop-hdr-nav a[aria-current="page"]{background:rgba(217,185,98,.14);color:#ffe2a0}
+.shop-hdr-back{border-color:rgba(221,189,105,.46);color:#f2d789;text-align:center}
+.shop-welcome{padding:clamp(46px,7vw,95px) 24px clamp(30px,5vw,62px);position:relative}
+.shop-welcome-inner{max-width:1130px;margin:auto}
+.shop-welcome h1{font:400 clamp(2.5rem,6vw,5.4rem)/1.05 var(--ff1);letter-spacing:-.025em;max-width:840px;color:#fff8eb;margin:0 0 21px}
+.shop-welcome-inner>p{font-size:clamp(1rem,1.4vw,1.15rem);line-height:1.8;color:#d3d9e3;max-width:710px}
+.shop-welcome-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:30px}
+.shop-welcome .btn{font-size:12px;letter-spacing:.06em;min-height:48px;padding:13px 23px}
+.shop-trust-strip{margin-top:36px;display:flex;gap:10px 28px;flex-wrap:wrap;color:#c4cedc;font-size:13px}
+.shop-trust-strip span::before{content:"✓";color:#efcf81;margin-right:9px}
+.company-bridge{max-width:1130px;margin:0 auto clamp(42px,5vw,75px);padding:clamp(26px,4vw,48px);background:linear-gradient(125deg,#17243c,#0b1325 72%);border:1px solid rgba(224,190,99,.46);border-radius:20px;display:flex;align-items:center;justify-content:space-between;gap:28px;box-shadow:0 20px 65px rgba(0,0,0,.22)}
+.company-bridge-copy{max-width:780px}
+.bridge-eyebrow{text-transform:uppercase;color:#f0d68d;letter-spacing:.15em;font-size:12px;font-weight:600;margin:0 0 12px}
+.company-bridge h2{font:400 clamp(2rem,3.7vw,3.5rem)/1.15 var(--ff1);color:#fff6e4;margin:0 0 12px}
+.company-bridge-copy>p:not(.bridge-eyebrow){font-size:1rem;line-height:1.8;color:#d4dbe5}
+.company-bridge-links{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:26px}
+.company-bridge-links .btn{font-family:var(--ff3);font-size:13px;letter-spacing:.04em;text-transform:none;font-weight:600;white-space:normal;text-align:center;min-height:50px}
+.bridge-secondary-link{color:#f3d99c;text-decoration:underline;text-underline-offset:5px;font-size:14px}
+.company-bridge-mark{width:116px;height:116px;flex:0 0 116px;border:1px solid rgba(243,211,135,.58);border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;color:#f0d58c;box-shadow:inset 0 0 35px rgba(216,183,93,.12)}
+.company-bridge-mark span{font:400 65px/1 var(--ff1)}
+.company-bridge-mark small{font:400 30px/1 var(--ff1);margin-left:-8px;margin-top:24px}
+.company-bridge-mark b{position:absolute;bottom:-12px;background:#101a30;border:1px solid var(--gold-line);padding:2px 9px;border-radius:20px;font-size:12px;letter-spacing:.18em}
+.shop-browse-section{max-width:1130px;margin:0 auto 25px;padding:0 4px}
+.shop-browse-heading{padding:0 24px 20px}
+.shop-browse-heading h2{font:400 clamp(2.2rem,4vw,3.5rem)/1.2 var(--ff1);color:#fff7e9;margin:0 0 9px}
+.shop-browse-heading p{color:#cdd4de;font-size:1rem;line-height:1.7;max-width:70ch}
+.shop-browse-section .catalog-tools{margin:8px auto 20px;padding:24px;background:rgba(15,24,42,.95);border:1px solid var(--gold-line);border-radius:16px;display:flex;flex-direction:column;gap:19px;max-width:none}
+.shop-browse-section .catalog-tools[hidden]{display:none}
+.shop-browse-section .catalog-search{width:100%;min-width:0;gap:8px}
+.shop-browse-section .catalog-search label,.catalog-filter-title,.catalog-sort-label{color:#e3e7ef;font-size:13px;font-weight:600;letter-spacing:.02em}
+.shop-browse-section .catalog-search input{width:100%;min-width:0;min-height:52px;padding:13px 17px;font-size:16px;border-radius:9px;background:#192641;border:1px solid #68748a;color:#fff}
+.shop-browse-section .catalog-search input::placeholder{color:#bac3d2;opacity:1}
+.catalog-filter-wrap{display:flex;flex-direction:column;gap:12px}
+.catalog-filters{gap:9px}
+.cat-chip{color:#e1e6ef;font-weight:500;font-size:14px;min-height:42px;border:1px solid #738095;padding:10px 17px;transition:background .18s,color .18s,border-color .18s}
+.cat-chip:hover{border-color:#f1d58b;color:#fff}
+.cat-chip[aria-pressed="true"],.cat-chip.active,.cat-chip.is-active{background:#e1bd67;color:#0a101c;border-color:#e1bd67;font-weight:700}
+.catalog-result-row{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.catalog-result-row .catalog-count{color:#d4dce8;font-size:13px}
+.catalog-sort-label{display:flex;align-items:center;gap:10px}
+#catalogSort{background:#192641;color:#fff;border:1px solid #738095;border-radius:7px;padding:9px 12px;font:inherit;font-size:14px}
+.catalog-grid{max-width:1130px;gap:24px;padding:0 0 90px}
+.product-card{border-color:rgba(218,187,102,.38);background:#101a2d;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.product-card-title{font-size:1.48rem}
+.product-card-desc{color:#d1d9e4;font-size:.92rem}
+.product-card-body{padding:23px}
+.product-card-price{color:#f2d27f}
+.shop-ftr{background:#070c17;border-top:1px solid var(--gold-line)}
+.shop-ftr-links{gap:12px 24px}
+.shop-ftr-links a{color:#d3d9e3;font-weight:500;font-size:13px}
+.shop-ftr-copy{color:#b7c1ce}
+.page-sub,.catalog-universes p{color:#c6cfda}
+@media(max-width:950px){
+ .shop-hdr-inner{padding:14px 20px;flex-wrap:wrap;gap:12px}
+ .shop-hdr-nav{order:3;width:100%;justify-content:flex-start;gap:5px;flex-wrap:wrap}
+ .shop-hdr-nav a{padding:9px 11px;font-size:13px}
+ .shop-hdr-back{margin-left:auto}
+ .shop-browse-section,.company-bridge{margin-left:20px;margin-right:20px}
+ .catalog-grid{padding:0 20px 60px}
+}
+@media(max-width:600px){
+ .shop-hdr-inner{padding:12px 17px;gap:10px}
+ .shop-logo{font-size:12px}
+ .shop-logo small{font-size:9px}
+ .shop-hdr-back{font-size:12px;padding:9px 12px}
+ .shop-hdr-nav{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none;gap:6px}
+ .shop-hdr-nav a{white-space:nowrap;min-height:40px;display:inline-flex;align-items:center}
+ .shop-welcome{padding:48px 20px 25px}
+ .shop-welcome h1{font-size:clamp(2.5rem,11vw,3.5rem)}
+ .shop-welcome-inner>p{font-size:16px}
+ .shop-welcome-actions .btn{width:100%;justify-content:center}
+ .shop-trust-strip{gap:8px 16px;font-size:12px;margin-top:22px}
+ .company-bridge{margin:10px 16px 45px;padding:25px 22px;display:block}
+ .company-bridge-mark{display:none}
+ .company-bridge-links .btn{width:100%}
+ .shop-browse-section{margin:0 16px 12px;padding:0}
+ .shop-browse-heading{padding:0 2px 17px}
+ .shop-browse-section .catalog-tools{padding:19px 16px}
+ .catalog-filters{display:flex;flex-wrap:wrap;gap:8px}
+ .cat-chip{font-size:13px;padding:9px 12px;min-height:42px}
+ .catalog-grid{padding:0 16px 60px;grid-template-columns:minmax(0,1fr)}
+ .catalog-result-row{align-items:stretch}
+ #catalogSort{max-width:100%}
+}
+@media (prefers-reduced-motion:reduce){.product-card:hover,.btn-gold:hover{transform:none}}
