@@ -23,6 +23,12 @@ advertised to a crawler.
   published at /updates/, so a label-derived loop would advertise a URL that
   does not exist.
 {%- endcomment -%}
+{%- comment -%}Approved public Shop inventory only.{%- endcomment -%}
+{%- for product in site.data.shop_seo_products %}
+  {%- assign product_page = '/shop/p/' | append: product.slug | append: '/' %}
+  <url><loc>{{ product_page | absolute_url }}</loc></url>
+{%- endfor %}
+  <url><loc>{{ '/shop/p/' | absolute_url }}</loc></url>
 {%- assign hubs = "/products/,/articles/,/guides/,/updates/,/about/,/faq/,/contact/" | split: "," %}
 {%- for h in hubs %}
   <url>

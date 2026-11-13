@@ -1,0 +1,275 @@
+[
+  {
+    "slug": "ai-prompt-library",
+    "title": "AI Prompt Library",
+    "description": "A collection of AI prompt templates with Excel toolkit, offline workspace and accompanying ebook.",
+    "category": "Software & Digital Tools",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-six/ai-prompt-library/v1/cover.png"
+  },
+  {
+    "slug": "homeschool-planner-2027-2028",
+    "title": "Homeschool Planner 2027-2028",
+    "description": "Printable and fillable planning pages for the 2027–2028 homeschool year.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-six/homeschool-planner-2027-2028/v1/cover.png"
+  },
+  {
+    "slug": "land-the-job",
+    "title": "Land the Job",
+    "description": "A job-search toolkit with resume and cover-letter templates, tracking workbook, offline workspace and ebook.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-six/land-the-job/v1/cover.png"
+  },
+  {
+    "slug": "side-hustle-launch-system",
+    "title": "Side Hustle Launch System",
+    "description": "A structured side-business launch kit with tracking workbook, offline workspace and accompanying ebook.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-six/side-hustle-launch-system/v1/cover.png"
+  },
+  {
+    "slug": "client-onboarding-kit",
+    "title": "Client Onboarding Kit",
+    "description": "Client onboarding templates including intake form, welcome packet, project scope documents and tracker.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-six/client-onboarding-kit/v1/cover.png"
+  },
+  {
+    "slug": "52-week-reflection-journal",
+    "title": "52-Week Reflection Journal",
+    "description": "A printable and fillable 52-week personal reflection journal.",
+    "category": "Spirituality & Reflection",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-six/52-week-reflection-journal/v1/cover.png"
+  },
+  {
+    "slug": "ratou-book-1-en",
+    "title": "RATOU Book I - The Ratel Awakens",
+    "description": "English edition PDF and EPUB",
+    "category": "Books & Publishing",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/ratou/v1/en/cover.jpg"
+  },
+  {
+    "slug": "ratou-tome-1-fr",
+    "title": "RATOU Tome I - L Eveil du Ratel",
+    "description": "Edition francaise PDF et EPUB",
+    "category": "Books & Publishing",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/ratou/v1/fr/cover.jpg"
+  },
+  {
+    "slug": "ai-operations-playbook-toolkit",
+    "title": "AI Operations Playbook & Toolkit",
+    "description": "A practical downloadable operations kit for home-service businesses, including an illustrated playbook, editable workbook, message templates and a 10-tab Excel tracker.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/legacy/ai-operations-playbook-toolkit/cover-square-v1.jpg"
+  },
+  {
+    "slug": "painting-contractor-estimating-system",
+    "title": "Painting Contractor Estimating System",
+    "description": "Estimate interior painting jobs using room measurements, paint quantities, labor hours and margin-based pricing. Includes Excel calculator, offline workspace, reusable Word templates and ebook.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-two/painting-contractor-estimating-system/v1/cover.jpg"
+  },
+  {
+    "slug": "debt-payoff-planner",
+    "title": "Debt Payoff Planner",
+    "description": "Compare debt snowball and debt avalanche repayment plans, estimated interest and debt-free timing using a detailed spreadsheet and offline workspace, plus printable tools and ebook.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-two/debt-payoff-planner/v1/cover.jpg"
+  },
+  {
+    "slug": "freelancer-money-system-2027",
+    "title": "Freelancer Money System 2027",
+    "description": "Plan freelance income, project cash flows and expenses using an Excel workbook, a fictional worked example and a quick-start PDF.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/freelancer-money-system-2027/v1/cover.png"
+  },
+  {
+    "slug": "luxe-planner-2027",
+    "title": "Luxe Planner 2027",
+    "description": "Plan your 2027 schedule with a digital linked PDF planner and an accompanying print-friendly edition.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/luxe-planner-2027/v1/cover.png"
+  },
+  {
+    "slug": "money-reset-2027",
+    "title": "Money Reset 2027",
+    "description": "Organize household budgeting, debt scenarios and sinking funds with Excel workbooks and an illustrated quick-start guide.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/money-reset-2027/v1/cover.png"
+  },
+  {
+    "slug": "just-in-case-family-binder",
+    "title": "Just in Case Family Emergency Binder",
+    "description": "Organize important family contacts, emergency information and responsibilities with fillable and printable PDFs and a setup guide. Not a legal document.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/just-in-case-family-binder/v1/cover.png"
+  },
+  {
+    "slug": "paid-off-debt-payoff-workbook",
+    "title": "Paid Off Debt Payoff Workbook",
+    "description": "Track a personal debt payoff plan with a fillable and printable PDF workbook and companion guide. Not financial advice.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/paid-off-debt-payoff-workbook/v1/cover.png"
+  },
+  {
+    "slug": "personal-finance-package-2027",
+    "title": "Personal Finance Package 2027",
+    "description": "Manage personal finances with four Excel workbooks for expenses, debt payoff, savings and emergency-fund planning, plus a guide.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/personal-finance-package-2027/v1/cover.png"
+  },
+  {
+    "slug": "sellers-year-2027-retail-toolkit",
+    "title": "The Seller's Year 2027 Retail Toolkit",
+    "description": "Plan 2027 retail events, launches and selling activities with an Excel calendar toolkit, fillable/printable PDF planner and guide.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/sellers-year-2027-retail-toolkit/v1/cover.png"
+  },
+  {
+    "slug": "wedding-budget-planning-system-2027",
+    "title": "Wedding Budget & Planning System 2027",
+    "description": "Plan a wedding budget with a spreadsheet tracker, fictional demonstration workbook and quick-start guide.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/wedding-budget-planning-system-2027/v1/cover.png"
+  },
+  {
+    "slug": "str-host-profit-system-2027",
+    "title": "Short-Term Rental Host Profit System 2027",
+    "description": "Review short-term rental performance and business costs with an Excel tracker, fictional demonstration workbook and quick-start guide.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/next-nine/str-host-profit-system-2027/v1/cover.png"
+  },
+  {
+    "slug": "small-business-cash-flow-control-toolkit",
+    "title": "Small Business Cash Flow Control Toolkit — Edition 4.2.1",
+    "description": "Illustrated 13-week cash flow planning kit with Excel workbooks and examples.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/products/shop-cashflow-v421-20261106/images/cover-ec9ee10df6106f3e0dc9ec46cfa282ebb6119e92861d6b59855bf5d59fc6f592.jpg"
+  },
+  {
+    "slug": "cleaning-business-pricing-and-operations-system",
+    "title": "Cleaning Business Pricing & Operations System",
+    "description": "Practical system for cleaning business pricing & operations system.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/cleaning-business-pricing-and-operations-system/v1.0/cover-75c036389b09565abb609babc3d49d55d09f3ca9db1961ca4b4914e1aa8056ea.jpg"
+  },
+  {
+    "slug": "skin-studio-business-kit",
+    "title": "Skin Studio Business Kit",
+    "description": "Practical system for skin studio business kit.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/skin-studio-business-kit/v1.0/cover-165811193dafd9da52adcf0adc2f07ef3b9c4ce98eab18a7c56505918adc8209.jpg"
+  },
+  {
+    "slug": "restaurant-food-and-prime-cost-system",
+    "title": "Restaurant Food & Prime Cost System",
+    "description": "Practical system for restaurant food & prime cost system.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/restaurant-food-and-prime-cost-system/v1.0/cover-8e80bcfcaf650527fa57a61a164f4777721cbe9c4131fde8826c7d181c9c5db4.jpg"
+  },
+  {
+    "slug": "hvac-and-home-service-pricing-system",
+    "title": "HVAC & Home Service Pricing System",
+    "description": "Practical system for hvac & home service pricing system.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/hvac-and-home-service-pricing-system/v1.0/cover-f20e25d3af864cfdd5f82ee306d5d2e2e9e46a80723942c68f8ae6efeec02152.jpg"
+  },
+  {
+    "slug": "ai-content-repurposing-governance-toolkit",
+    "title": "AI Content Repurposing Governance Toolkit",
+    "description": "Practical system for ai content repurposing governance toolkit.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/ai-content-repurposing-governance-toolkit/v1.0/cover-b4ceec095bc1ed2139ffd781121a1d8f64385ea8ff937c635f977ab41fc9ad50.jpg"
+  },
+  {
+    "slug": "small-business-cybersecurity-readiness-playbook",
+    "title": "Small Business Cybersecurity Readiness Playbook",
+    "description": "Practical system for small business cybersecurity readiness playbook.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/small-business-cybersecurity-readiness-playbook/v1.0/cover-7ae5773576cb74a8e7fc9858d0dc23e6a6d40a9dd8c5c79ea0a5bbb08e00f081.jpg"
+  },
+  {
+    "slug": "ai-safe-sop-builder-for-small-teams",
+    "title": "AI-Safe SOP Builder for Small Teams",
+    "description": "Practical system for ai-safe sop builder for small teams.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/ai-safe-sop-builder-for-small-teams/v1.0/cover-54773e06af5c5cde67519b21d50bb5cdcd8e0f8d5e3a03eaa57c47b9bbfd553a.jpg"
+  },
+  {
+    "slug": "service-business-operations-playbook",
+    "title": "Service Business Operations Playbook",
+    "description": "Practical system for service business operations playbook.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/service-business-operations-playbook/v1.0/cover-32d3937017c796cac5cda01b63e1b9a97ed23788bf9bb19cd7fb5aecbf0a1f4d.jpg"
+  },
+  {
+    "slug": "new-employee-onboarding-sop-pack",
+    "title": "New Employee Onboarding SOP Pack",
+    "description": "Practical system for new employee onboarding sop pack.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/new-employee-onboarding-sop-pack/v1.0/cover-215b72165cd87b56d4553e4e979da98591376849a97666448c76d28d857f7934.jpg"
+  },
+  {
+    "slug": "client-onboarding-sop-system-for-service-firms",
+    "title": "Client Onboarding SOP System for Service Firms",
+    "description": "Practical system for client onboarding sop system for service firms.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/client-onboarding-sop-system-for-service-firms/v1.0/cover-fcef8960d3605d98fa97e8defbaf581a3e4bcd3f919d7e52fe22fce6657cc65b.jpg"
+  },
+  {
+    "slug": "digital-product-business-starter-kit",
+    "title": "Digital Product Business Starter Kit",
+    "description": "Practical system for digital product business starter kit.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/digital-product-business-starter-kit/v1.0/cover-94d3983279bd218b3418536f759e63ca3161dcc6d281143d13d27948aa62fd70.jpg"
+  },
+  {
+    "slug": "digital-product-validation-and-launch-toolkit",
+    "title": "Digital Product Validation and Launch Toolkit",
+    "description": "Practical system for digital product validation and launch toolkit.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/digital-product-validation-and-launch-toolkit/v1.0/cover-b4aa5d9b791f8be142fa5c4b18c70340f35e40fc38fb4b8f060e9eafd95dbcb1.jpg"
+  },
+  {
+    "slug": "etsy-profit-and-listing-operations-toolkit",
+    "title": "Etsy Profit and Listing Operations Toolkit",
+    "description": "Practical system for etsy profit and listing operations toolkit.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/etsy-profit-and-listing-operations-toolkit/v1.0/cover-0b444562e3fc4c5e785a92e5ca9ab590c5521233b20f70fd53a68b36ff098ff0.jpg"
+  },
+  {
+    "slug": "first-profitable-digital-product-decision-system",
+    "title": "The First Profitable Digital Product Decision System",
+    "description": "Practical system for the first profitable digital product decision system.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/first-profitable-digital-product-decision-system/v1.0/cover-f84b60b2bd608a5cee67c04e2ff9dc32a59018a755b14d905de94d26052312b7.jpg"
+  },
+  {
+    "slug": "first-product-decision-framework",
+    "title": "First Product Decision Framework",
+    "description": "Practical system for first product decision framework.",
+    "category": "Education & Learning",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/first-product-decision-framework/v1.0/cover-6f9a956b8cf9bac004123fb4b63b455ea81d7adc80beee437eed167fd6fee49d.jpg"
+  },
+  {
+    "slug": "consultant-lead-to-close-proposal-system",
+    "title": "Consultant Lead-to-Close Proposal System",
+    "description": "Practical system for consultant lead-to-close proposal system.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/consultant-lead-to-close-proposal-system/v1.0/cover-4827ecfd0a4587885b9fdf2bec123f215011a78979f1ad3385e7e4992ec7f2d7.jpg"
+  },
+  {
+    "slug": "small-business-profit-and-pricing-calculator",
+    "title": "Small Business Profit & Pricing Calculator",
+    "description": "Practical system for small business profit & pricing calculator.",
+    "category": "Software & Digital Tools",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/small-business-profit-and-pricing-calculator/v1.0/cover-e275f33f5073f341401143a089fe14470cddea675d13fab8a91e3a3dc7546eaa.jpg"
+  },
+  {
+    "slug": "freelancer-pricing-and-scope-protection-toolkit",
+    "title": "Freelancer Pricing and Scope Protection Toolkit",
+    "description": "Practical system for freelancer pricing and scope protection toolkit.",
+    "category": "Business & Professional",
+    "coverImageUrl": "https://pub-34b490acdc744405a99b6707899b9caa.r2.dev/catalog/2027/freelancer-pricing-and-scope-protection-toolkit/v1.0/cover-13cb8398536c16d731ae3a8f5829424d090ba4c2a89f79d7c6fc2beb62a3b423.jpg"
+  }
+]
