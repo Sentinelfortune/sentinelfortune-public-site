@@ -362,6 +362,13 @@ async function startCheckout(slug, btn) {
       throw new Error((data && data.error) || "Checkout could not be started.");
     }
 
+    // Kept only in this browser: lets success.html show the download once payment is confirmed by the webhook.
+    if (data.orderAccess && data.orderAccess.sessionId && data.orderAccess.claim) {
+      try {
+        localStorage.setItem("sfl_order_access:" + data.orderAccess.sessionId, JSON.stringify({ claim: data.orderAccess.claim, at: Date.now() }));
+      } catch (e) { /* storage blocked: the email link and recovery page still work */ }
+    }
+
     window.location.href = data.checkoutUrl;
   } catch (err) {
     console.warn("[shop] checkout failed", err);
